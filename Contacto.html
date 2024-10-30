@@ -4,22 +4,69 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
+    <link rel="stylesheet" href="CSS/style.css">
 </head>
 
 <body>
+    <a href="index.html">Página principal</a>
     <fieldset>
         <legend><b>Datos Personales</b></legend>
         <form action="http://localhost/proceso.php" method="post">
             <p>Nombre: <input type="text" name="nombre" size="60"></p>
             <p>Apellidos: <input type="text" name="apellidos" size="60"></p>
             <p>Edad: <input type="text" name="edad" size="8"></p>
-            <p>
-                Genero: <input type="radio" name="genero" value="h">Hombre
+            <p>Genero: </p>
+                <p>
+                <input type="radio" name="genero" value="h">Hombre
                 <input type="radio" name="genero" value="m">Mujer
-            </p>
-
+                </p>
         </form>
     </fieldset>
+    <fieldset>
+        <legend><b>Contacto</b></legend>
+        <form action="http://localhost/proceso.php" method="post">
+            <p>Correo electrónico: <input type="text" name="correo" size="70"></p>
+            <p>Código postal: <input type="text" name="postal" size="35"></p>
+            <p>Dirección: <input type="text" name="dirección" size="70"></p>
+            <p>Ciudad: <select name="opciones" size="1">
+                <option selected>Jaén</option>
+                <option >Córdoba</option>
+                <option >Sevilla</option>
+                <option >Granada</option>
+                <option >Málaga</option>
+                <option >Huelva</option>
+                <option >Almería</option>
+            </select></p>
+            <p>Contraseña: <input type="password" name="postal" size="70"></p>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend><b>Datos de Interés</b></legend>
+        <form action="http://localhost/proceso.php" method="post">
+            <p>Estado civil: </p>
+                <p>
+                <input type="radio" name="genero" value="c">Casado
+                <input type="radio" name="genero" value="n">No casado
+                </p>
+            <p>Hobblies: <br>
+                <input type="checkbox"
+                name="Opción 1">Deportes<br>
+                <input type="checkbox"
+                name="Opción 2">Cine<br>
+                <input type="checkbox"
+                name="Opción 3">Lectura<br>
+                <input type="checkbox"
+                name="Opción 4">Correr</p>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend><b>Comentarios Adicionales</b></legend>
+        <p>Escribe aquí tus comentarios</p>
+        <p><Textarea name="comentario" placeholder="Escribe tus comentarios aquí" rows="4" cols="35"></Textarea></p>
+    </fieldset>
+
+    <p><input type="submit" value="Enviar">
+        <input type="reset" value="Resetear"></p>
     
 </body>
 </html>
