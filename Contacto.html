@@ -9,9 +9,12 @@
 
 <body>
     <a href="index.html">Página principal</a>
-    <fieldset>
+    <hr>
+    <h1><b>Formulario de Contacto</b></h1>
+    <form action="http://localhost/proceso.php" method="post">
+     <fieldset>
         <legend><b>Datos Personales</b></legend>
-        <form action="http://localhost/proceso.php" method="post">
+        
             <p>Nombre: <input type="text" name="nombre" size="60"></p>
             <p>Apellidos: <input type="text" name="apellidos" size="60"></p>
             <p>Edad: <input type="text" name="edad" size="8"></p>
@@ -20,11 +23,10 @@
                 <input type="radio" name="genero" value="h">Hombre
                 <input type="radio" name="genero" value="m">Mujer
                 </p>
-        </form>
-    </fieldset>
-    <fieldset>
+     </fieldset>
+     <fieldset>
         <legend><b>Contacto</b></legend>
-        <form action="http://localhost/proceso.php" method="post">
+        
             <p>Correo electrónico: <input type="text" name="correo" size="70"></p>
             <p>Código postal: <input type="text" name="postal" size="35"></p>
             <p>Dirección: <input type="text" name="dirección" size="70"></p>
@@ -38,17 +40,16 @@
                 <option >Almería</option>
             </select></p>
             <p>Contraseña: <input type="password" name="postal" size="70"></p>
-        </form>
-    </fieldset>
-    <fieldset>
+     </fieldset>
+     <fieldset>
         <legend><b>Datos de Interés</b></legend>
-        <form action="http://localhost/proceso.php" method="post">
+        
             <p>Estado civil: </p>
                 <p>
                 <input type="radio" name="genero" value="c">Casado
                 <input type="radio" name="genero" value="n">No casado
                 </p>
-            <p>Hobblies: <br>
+            <p>Hobbies: <br>
                 <input type="checkbox"
                 name="Opción 1">Deportes<br>
                 <input type="checkbox"
@@ -57,16 +58,17 @@
                 name="Opción 3">Lectura<br>
                 <input type="checkbox"
                 name="Opción 4">Correr</p>
-        </form>
-    </fieldset>
-    <fieldset>
+     </fieldset>
+     <fieldset>
         <legend><b>Comentarios Adicionales</b></legend>
+
         <p>Escribe aquí tus comentarios</p>
         <p><Textarea name="comentario" placeholder="Escribe tus comentarios aquí" rows="4" cols="35"></Textarea></p>
-    </fieldset>
+     </fieldset>
 
-    <p><input type="submit" value="Enviar">
+     <p><input type="submit" value="Enviar">
         <input type="reset" value="Resetear"></p>
+    </form>
     
 </body>
 </html>
