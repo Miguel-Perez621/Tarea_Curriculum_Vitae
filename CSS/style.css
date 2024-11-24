@@ -1,8 +1,20 @@
+    main {text-align: center; margin-top: 1cm;}
+
+    nav {text-align: left; margin-left: 1cm;}
+
+    section:hover, footer:hover {
+        margin-left: 1cm;
+        background-color: bisque; 
+        border-radius: 3%; 
+        margin-left: 1cm;}
+
+    
     h1 {
         color: rgba(0, 0, 255, 0.575);
     }
 
     img {
+        margin-right: 1cm;
         border-radius: 50%;
         max-width: 100%;
         height: auto;
