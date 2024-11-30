@@ -1,20 +1,28 @@
+    /* Con este retoque se coloca en el index el texto del comienzo en el cetro*/
     main {
         text-align: center;
         margin-top: 1cm;
     }
 
+    /* Con esto los enlaces se resaltan con color en el fondo cuando se pasa el raton por ellos*/
     a:hover {
         background-color: khaki;
     }
 
+    /* Con esto se consigue que el indice y la información principal salgan uno junto al otro, ademas de
+    que se resalte con color en el fondo para destacarlo y con un borde fino negro*/
     .principal {
+        border: black solid;
         background-color: beige;
+        /* Indicando un tanto por ciento del ancho se consigue que se muestre de la forma deseada tanto en pantalla completa como con
+        el navegador en formato ventana*/
         width: 100%;
         line-height: normal;
         display: flex;
         border-radius: 4%;
     }
 
+    /* Con estos dos retoques se consigue que el indice salga al lado izquierdo de la pantalla ocupando un 20% del ancho total*/
     .grupo1 {
         width: 20%;
     }
@@ -24,12 +32,9 @@
         border-radius: 5%;
     }
 
-    nav {
-        text-align: left;
-        margin-left: 1cm;
-    }
-
+    /* Con esto se consigue que resalten los apartados del index cuando se pasa el ratón por ellos*/
     section:hover, footer:hover {
+        border: black solid;
         margin-left: 1cm;
         background-color: beige;
         border-radius: 3%;
@@ -41,6 +46,7 @@
         color: rgba(0, 0, 255, 0.575);
     }
 
+    /* Con esto se indica que las imagenes incluidas tengan el borde redondeado*/
     img {
         margin-right: 1cm;
         border-radius: 50%;
@@ -48,14 +54,15 @@
         height: auto;
     }
 
+    /* Esto coloca la imagen de fondo en todas las páginas*/
     body {
-
         background-repeat: no-repeat;
         background-image: url(' /Img/Fondo.jpg');
         background-size: cover;
     }
 
     .borde_sobremi {
+        border: black solid;
         background-color: beige;
         margin-left: 5%;
         margin-right: 5%;
@@ -63,9 +70,11 @@
     }
 
     .interior_sobremi {
-        margin: 5%;
+       
+        margin: 3%;
     }
 
+    /* Con esto se coloca el texto de la tabla orientado al centro y los bordes de los campos se junten en un solo borde*/
     table, th, td {
         border: 1px solid black;
         border-collapse: collapse;
@@ -73,10 +82,12 @@
 
     }
 
+    /* Con esto se establece el color de fondo para los distintos apartados del formulario de contacto*/
     fieldset {
         background-color: beige;
     }
 
     legend {
-        margin-top: 3%;
+        background-color: bisque;
+        border-radius: 5%;
     }
