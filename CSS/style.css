@@ -1,14 +1,42 @@
-    main {text-align: center; margin-top: 1cm;}
+    main {
+        text-align: center;
+        margin-top: 1cm;
+    }
 
-    nav {text-align: left; margin-left: 1cm;}
+    a:hover {
+        background-color: khaki;
+    }
+
+    .principal {
+        background-color: beige;
+        width: 100%;
+        line-height: normal;
+        display: flex;
+        border-radius: 4%;
+    }
+
+    .grupo1 {
+        width: 20%;
+    }
+
+    .grupo2 {
+        width: 80%;
+        border-radius: 5%;
+    }
+
+    nav {
+        text-align: left;
+        margin-left: 1cm;
+    }
 
     section:hover, footer:hover {
         margin-left: 1cm;
-        background-color: bisque; 
-        border-radius: 3%; 
-        margin-left: 1cm;}
+        background-color: beige;
+        border-radius: 3%;
+        margin-left: 1cm;
+        width: 80%;
+    }
 
-    
     h1 {
         color: rgba(0, 0, 255, 0.575);
     }
@@ -20,12 +48,35 @@
         height: auto;
     }
 
-    body{
+    body {
+
+        background-repeat: no-repeat;
+        background-image: url(' /Img/Fondo.jpg');
+        background-size: cover;
+    }
+
+    .borde_sobremi {
         background-color: beige;
+        margin-left: 5%;
+        margin-right: 5%;
+        border-radius: 5%;
+    }
+
+    .interior_sobremi {
+        margin: 5%;
     }
 
     table, th, td {
         border: 1px solid black;
+        border-collapse: collapse;
         text-align: center;
 
+    }
+
+    fieldset {
+        background-color: beige;
+    }
+
+    legend {
+        margin-top: 3%;
     }
